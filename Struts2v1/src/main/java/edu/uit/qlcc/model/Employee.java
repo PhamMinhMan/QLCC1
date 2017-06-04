@@ -1,11 +1,26 @@
 package edu.uit.qlcc.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="employee")
+
 public class Employee extends Base implements java.io.Serializable{
+	@Id
+	@Column(name = "emp_code")
 	private String empCode;
+	@Column(name = "emp_name")
 	private String empName;
+	@Column(name = "com_code")
 	private String comCode;
+	@Column(name = "address")
 	private String address;
+	@Column(name = "phone")
 	private String phone;
+	@Column(name = "emp_password")
 	private String empPassword;
 	
 	
