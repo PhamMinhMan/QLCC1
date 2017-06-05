@@ -1,0 +1,77 @@
+.well {
+    background: none;
+    height: 320px;
+    border-color: #009989;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    /* border-color: red; */
+    /* column-rule-color: red; */
+    background-color: rgba(0,153,137,.5);
+    background-color: white;
+    background-color: rgba(0,153,137,.5);
+}
+.h2, h2 {
+    font-size: 2rem;
+    color: #009989;
+    text-align: center;
+}
+tr td:nth-child(1) {
+	font-weight: bold;
+	font-size: 17px;
+}
+tr td:nth-child(2) {
+	font-size: 17px;
+}
+td.tdLabel {
+/*     text-align: right; */
+/*     padding-right: 15px; */
+/*     height: 15px; */
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.table-scroll tbody {
+    position: absolute;
+    overflow-y: scroll;
+    height: 250px;
+    /* border-color: red; */
+    /* column-rule-color: rebeccapurple; */
+    /* -webkit-border-after-color: red; */
+    /* outline-color: red; */
+}
+
+.table-scroll tr {
+    width: 100%;
+    table-layout: fixed;
+    display: inline-table;
+}
+.form {
+	border-radius: 25px;
+    border: 2px solid #73AD21;
+ 	background-color: #CCFBB7;
+    width: 400px;
+  /* height: 400px; */
+    padding: 20px;
+
+.table-scroll thead > tr > th {
+/*     border: none; */
+}
+.back{
+	margin-top: 10px;
+	width: 90px;
+	height: 30px;
+	padding: 3px 10px;
+	border-radius: 5px;
+	border: 1px solid black;
+	background-color:  #D9DBD5;
+	
+	color: #00000;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    /*left: 0%; 
+    top: 48.9%;*/
+   
+}

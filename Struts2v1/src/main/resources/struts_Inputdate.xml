@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="A02_Inputdate" extends="default">
+		<action name="register" class="edu.uit.qlcc.common.action.InputdateAction"
+			method="doRegister">
+			<interceptor-ref name="defaultStack" />
+			<result name="success">/pages/register.jsp</result>
+			<result name="input">/pages/inputdate.jsp</result>
+		</action>
+		<action name="back" class="edu.uit.qlcc.common.action.InputdateAction"
+			method="doBack">
+			<interceptor-ref name="defaultStack" />
+			<result name="success">/pages/login.jsp</result>
+		</action>
+		<action name="search" class="edu.uit.qlcc.common.action.InputdateAction"
+			method="doSearch">
+			<interceptor-ref name="defaultStack" />
+			<result name="success">/pages/search.jsp</result>
+			<result name="input">/pages/inputdate.jsp</result>
+		</action>
+	</package>
+</struts>

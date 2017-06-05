@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+ "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.devMode" value="false" />
+	
+	<!-- Lay noi dung tu file .properties -->
+	<constant name="struts.custom.i18n.resources" value="ApplicationResources" />
+	<constant name="struts.custom.i18n.resources" value="global" />
+	
+	<!-- Su dung nhieu action trong 1 trang -->
+	<constant name="struts.mapper.action.prefix.enabled" value="true" />
+
+	<package name="default" namespace="/" extends="struts-default">
+
+		<interceptors>
+
+			<interceptor name="session" class="edu.uit.qlcc.common.interceptor.SessionInterceptor" />
+			<interceptor-stack name="authStack">
+				<interceptor-ref name="session" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+<!-- 		<default-interceptor-ref name="authStack" /> -->
+		<global-results>
+			<result name="session">/pages/login.jsp</result>
+		</global-results>
+	</package>
+	
+	<include file="struts_Login.xml"></include>
+	<include file="struts_Inputdate.xml"></include>
+	<include file="struts_Register.xml"></include>
+	<include file="struts_Search.xml"></include>
+	<include file="struts_Update.xml"></include>
+	
+
+</struts>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+ 	<bean id="loginAction" class="edu.uit.qlcc.common.action.LoginAction">
+		<property name="companyService" ref="conpanyService" />
+	</bean>
+
+	<bean id="companyService" class="edu.uit.qlcc.common.service.impl.CompanyService" >
+		<property name="companyDao" ref="companyDao" />
+	</bean>
+
+<!--    	<bean id="companyDao" class="edu.uit.qlcc.common.dao.impl.CompanyDao" > -->
+<!-- 		<property name="sessionFactory" ref="sessionFactory" /> -->
+<!-- 	</bean> -->
+
+</beans>

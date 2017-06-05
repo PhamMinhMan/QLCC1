@@ -1,0 +1,19 @@
+h1 {
+	color: #009989;
+	text-align: center;
+}
+
+.center{
+	text-align: center;
+}
+
+li{
+	list-style: none;
+}
+
+.errorMessage{
+	color: #CE1836;
+	font-style: italic;
+	margin: 0px;
+	padding-left: 0px;
+}

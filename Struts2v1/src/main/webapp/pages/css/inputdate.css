@@ -1,0 +1,132 @@
+.errors {
+	
+	width:300px;
+	margin-bottom:8px;
+	margin-left: 50px;
+	text-align: center;
+	color: #CE1836
+}
+
+ .form {
+	border-radius: 25px;
+    border: 2px solid #009989;
+ 	background-color: #FFFFFF;
+    width: 400px;
+  /* height: 400px; */
+    padding: 20px;
+    
+}
+body{
+/* 	background-color: #e6ffe6; */
+}
+.module{
+	border-color: #95CFB7;
+	border-width: 2px;
+	width: 400px;
+    height: 100%;
+	margin: 150px auto;
+	
+}
+
+td.tdLabel {
+/*     text-align: right; */
+/*     padding-right: 15px; */
+/*     height: 15px; */
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+tr td:nth-child(1) {
+	font-weight: bold;
+	font-size: 20px;
+	width: 150px;
+}
+/*tr td:nth-child(3) {
+	font-weight: bold;
+	width: 150px;
+}
+tr td:nth-child(2){
+	width: 150px;
+}
+tr td:nth-child(4) {
+	width: 150px;
+} */
+
+table.wwFormTable {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 15px;
+}
+
+.back{
+	margin-top: 10px;
+	width: 90px;
+	height: 30px;
+	padding: 3px 10px;
+	border-radius: 5px;
+	border: 1px solid #A3A948;
+	background-color:  rgba(163,169,72,.25);
+	
+	color: #000000;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    
+   
+    margin-bottom: -60px;
+    /*left: 0%; 
+    top: 48.9%;*/
+    
+
+}
+
+
+.search{
+	margin-top: 10px;
+	width: 90px;
+	height: 30px;
+	padding: 3px 10px;
+	border-radius: 5px;
+	border: 1px solid #CE1836;
+	background-color: rgba(126,24,54,.15);
+	color: #000000;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+	cursor: pointer;
+	white-space: nowrap;
+	/*  margin-bottom : -60px; */
+	margin-top : 2px;
+	margin-left: 50px;
+}
+
+.register{
+	margin-top: 10px;
+	width: 90px;
+	height: 30px;
+	padding: 3px 10px;
+	border-radius: 5px;
+	border: 1px solid #EDB92E;
+	background-color: rgba(237,185,46,.25);
+	color: #00000;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+	cursor: pointer;
+	white-space: nowrap;
+	margin-top : -33.5px;
+	margin-right: 30px;
+}
+
+.back:hover, .back:focus {
+    background-color: #F8FAF3;
+    border-color: #00000;
+}
+.search:hover, .search.focus {
+    background-color: rgba(126,24,54,.35);
+    border: 1px solid #CE1836;
+}
+.register:hover, .register:focus{
+	background-color: #F5DD02;
+    border: 1px solid #EDB92E;
+}

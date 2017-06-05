@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="A04_Search" namespace="/" extends="default">
+		<action name="back" class="edu.uit.qlcc.common.action.SearchAction"
+			method="doBack">
+			<interceptor-ref name="defaultStack" />
+			<result name="success">/pages/inputdate.jsp</result>
+			<result name="error">/pages/search.jsp</result>
+		</action>
+
+		<action name="next" class="edu.uit.qlcc.common.action.SearchAction"
+			method="doNext">
+			<interceptor-ref name="defaultStack" />
+			<result name="success">/pages/search.jsp</result>
+			<result name="error">/pages/search.jsp</result>
+		</action>
+		<action name="previous" class="edu.uit.qlcc.common.action.SearchAction"
+			method="doPrevious">
+			<interceptor-ref name="defaultStack" />
+			<result name="success">/pages/search.jsp</result>
+			<result name="error">/pages/search.jsp</result>
+		</action>
+		<action name="print" class="edu.uit.qlcc.common.action.SearchAction"
+			method="doPrint">
+			<interceptor-ref name="defaultStack" />
+			<result name="success">/pages/search.jsp</result>
+			<result name="error">/pages/search.jsp</result>
+		</action>
+
+		<action name="delete" class="edu.uit.qlcc.common.action.SearchAction"
+			method="doDelete">
+			<interceptor-ref name="defaultStack" />
+			<result name="success">/pages/search.jsp</result>
+			<result name="error">/pages/search.jsp</result>
+		</action>
+
+		<action name="update" class="edu.uit.qlcc.common.action.SearchAction"
+			method="doUpdate">
+			<interceptor-ref name="defaultStack" />
+			<result name="success">/pages/update.jsp</result>
+			<result name="error">/pages/search.jsp</result>
+		</action>
+	</package>
+</struts>

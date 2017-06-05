@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20 Julai 2010 11:40:18 AM by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+    <class name="edu.uit.qlcc.model.Company"
+		table="company" catalog="qlcc">
+        <id name="comCode" type="string">
+            <column name="com_code" length="4"/>
+            <generator class="identity" />
+        </id>
+        <property name="comName" type="string">
+            <column name="com_name" length="45" not-null="true" />
+        </property>
+        <property name="createCode" type="string">
+            <column name="create_code"  length="4" not-null="true" />
+        </property>
+        <property name="createDate" type="string">
+            <column name="create_date" length="45" not-null="true" />
+        </property>
+         <property name="updateCode" type="string">
+            <column name="update_code" length="4" />
+        </property>
+         <property name="updateDate" type="string">
+            <column name="update_date" length="45" />
+        </property>
+          <property name="flagDelete" type="string">
+            <column name="flag_delete" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

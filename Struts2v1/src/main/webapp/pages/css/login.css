@@ -1,0 +1,67 @@
+.errors {
+	background-color:#FFCCCC;
+	border:1px solid #CE1836;
+	width:400px;
+	margin-bottom:8px;
+}
+
+.form {
+	border-radius: 25px;
+    border: 2px solid #009989;
+ 	background-color: #FFFFFF;
+    width: 400px;
+  /* height: 400px; */
+    padding: 20px;
+    
+}
+body{
+/* 	background-color: #e6ffe6; */
+}
+.module{
+	border-color: #009989;
+	border-width: 2px;
+	width: 400px;
+    height: 100%;
+	margin: 150px auto;
+	
+}
+
+td.tdLabel {
+/*     text-align: right; */
+/*     padding-right: 15px; */
+/*     height: 15px; */
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+table.wwFormTable {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 15px;
+}
+
+.login{
+	margin-top: 10px;
+	width: 90px;
+	height: 30px;
+	padding: 3px 10px;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 1px solid #EDB92E;
+	background-color: rgba(237,185,46,.25);
+}
+.login:hover, .login:focus {
+    background-color: #F5DD02;
+    border: 1px solid #EDB92E;
+
+input[type="text"], input[type="password"]{
+	border: 1px solid #EDB92E;
+    border-radius: 5px;
+    height: 22px;
+    margin-bottom: 3px;
+    padding: 2px 3px;
+    font-size: 16px;
+}
+
