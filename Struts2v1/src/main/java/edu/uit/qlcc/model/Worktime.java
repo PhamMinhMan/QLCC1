@@ -1,5 +1,11 @@
 package edu.uit.qlcc.model;
 
+import javax.persistence.Embeddable;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="worktime")
 public class Worktime extends Base{
 	private String dateOfmonth;
 	private String day;
@@ -105,5 +111,4 @@ public class Worktime extends Base{
 	public void setDay(String day) {
 		this.day = day;
 	}
-	
 }
