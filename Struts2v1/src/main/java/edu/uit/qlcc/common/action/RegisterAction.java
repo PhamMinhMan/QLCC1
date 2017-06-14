@@ -191,15 +191,20 @@ public class RegisterAction extends BaseAction implements SessionAware {
 		return Global.MINUTE;
 	}
 
+//	// truyen date qua register.jsp
+//	public String getSdate() {
+//		Date registerDate = (Date) session.get(SESSION_DATE);
+//		Calendar calendar = Calendar.getInstance();
+//		calendar.setTime(registerDate);
+//		dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+//		String sdate = dateFormat.format(calendar.getTime());
+//		return sdate;
+//	}
+	
 	// truyen date qua register.jsp
-	public String getSdate() {
-		Date registerDate = (Date) session.get(SESSION_DATE);
-		Calendar calendar = Calendar.getInstance();
-		calendar.setTime(registerDate);
-		dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-		String sdate = dateFormat.format(calendar.getTime());
-		return sdate;
-	}
+		public Date getDate() {
+			return (Date) session.get(SESSION_DATE);
+		}
 
 	public String getStarttime_hh_default() {
 		return starttime_hh_default;

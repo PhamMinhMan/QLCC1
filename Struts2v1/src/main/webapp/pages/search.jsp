@@ -23,7 +23,7 @@
 					<tr>
 						<td>Employee Name:</td>
 						<td><s:property value="#session.empname" /></td>
-						<td>Date:</td>
+						<td style="font-weight: bold;">Date:</td>
 <%-- 						<td id="date"><s:property value="searchDate" /></td> --%>
 						<td id="date"><s:date name="date" format="yyyy/MM" /></td>
 					</tr>
